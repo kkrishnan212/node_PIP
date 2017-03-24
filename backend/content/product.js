@@ -2,7 +2,7 @@ $(function(){
  
     var tmpl,   // Main template HTML
     tdata = {};  // JSON data object that feeds the template
- 
+
     // Initialise page
     var initPage = function() {
  
@@ -19,7 +19,7 @@ $(function(){
         // When AJAX calls are complete parse the template 
         // replacing mustache tags with vars
         $(document).ajaxStop(function () {
-            var renderedPage = Mustache.to_html( tmpl, {product: [{name: "aa"}]} );
+            var renderedPage = Mustache.to_html( tmpl, tdata);//{product: [{name: "aa"}]} );
             $("body").html( renderedPage );
         })    
     }();

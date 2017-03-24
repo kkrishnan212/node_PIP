@@ -4,8 +4,7 @@
 "version": "0.0.1",
 "private": true,
 "dependencies": {
-	"express": "4.x",
-	 "async": "2.x"
+	"express": "4.x"
 	},
 "main": "./jsonServer.js"
 }
