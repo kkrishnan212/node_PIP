@@ -1,0 +1,13 @@
+<div id="product_list">
+  <p> There are {{ product.length }} products</p>
+  <ul id="product">
+    {{#product}}
+      <li class="product">
+    {{name}}
+      </li>
+    {{/product}}
+    {{^product}}
+      <li>  no products in myshop </li>
+    {{/product}}
+  </ul>
+</div>

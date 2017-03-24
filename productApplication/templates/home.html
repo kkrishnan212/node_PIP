@@ -1,0 +1,13 @@
+<div id="product_list">
+  <p> There are {{ product.length }} products</p>
+  <ul id="product">
+    {{#product}}
+      <li class="product">
+        <a href='http://localhost:8080/products/{{name}}'>{{name}}</a>
+      </li>
+    {{/product}}
+    {{^product}}
+      <li> Sorry, there are currently no albums </li>
+    {{/product}}
+  </ul>
+</div>
